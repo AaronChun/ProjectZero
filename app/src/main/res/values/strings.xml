@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ProjectZero</string>
+    <string name="str_textview">纳米学位应用</string>
+    <string name="app_label">我的应用作品集</string>
+    <string name="str_movie">热门电影</string>
+    <string name="str_stock">股票雄鹰</string>
+    <string name="str_reader">XYZ阅读器</string>
+    <string name="str_news">最新闻</string>
+    <string name="str_project">毕业设计</string>
+    <string name="str_detail">启动应用：</string>
+
 </resources>
