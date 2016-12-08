@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
+        /*switch (view.getId()) {
             case R.id.movie:
                 Toast.makeText(MainActivity.this, getString(R.string.str_detail) + getString(R.string.str_movie), Toast.LENGTH_SHORT).show();
                 break;
@@ -62,8 +62,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
 
-        }
+        }*/
 
+        Button button = (Button) view;
+
+        String appName = button.getText().toString();
+
+        Toast.makeText(this,getString(R.string.str_detail)+appName,Toast.LENGTH_SHORT).show();
 
     }
 }

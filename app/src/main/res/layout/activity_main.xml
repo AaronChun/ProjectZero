@@ -1,85 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/activity_main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:padding="10dp">
 
-    <TextView
-        android:id="@+id/text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/str_textview"
-        android:textSize="22dip"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dip"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        />
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_top_title"
+            android:text="@string/str_textview"
+            android:textSize="22sp"
+            android:textStyle="bold"
 
-    <!-- 热门电影-->
-    <Button
-        android:id="@+id/movie"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="@string/str_movie"
-        android:background="@color/btn_bg_color"
-        android:layout_below="@id/text_view"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/text_bg_color"/>
+            />
 
-
-    <!-- 股票雄鹰-->
-    <Button
-        android:id="@+id/stock"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="@string/str_stock"
-        android:background="@color/btn_bg_color"
-        android:layout_below="@id/movie"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/text_bg_color"/>
+        <!-- 热门电影-->
+        <Button
+            android:id="@+id/movie"
+            android:layout_below="@id/text_view"
+            android:text="@string/str_movie"
+            style="@style/CustomButtonStyle" />
 
 
-    <!-- XYZ阅读器 -->
-    <Button
-        android:id="@+id/reader"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="@string/str_reader"
-        android:background="@color/btn_bg_color"
-        android:layout_below="@id/stock"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/text_bg_color"/>
-
-    <!-- 最新闻 -->
-    <Button
-        android:id="@+id/news"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="@string/str_news"
-        android:background="@color/btn_bg_color"
-        android:layout_below="@id/reader"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/text_bg_color"/>
+        <!-- 股票雄鹰-->
+        <Button
+            android:id="@+id/stock"
+            android:layout_below="@id/movie"
+            android:text="@string/str_stock"
+            style="@style/CustomButtonStyle" />
 
 
-    <!-- 毕业设计 -->
-    <Button
-        android:id="@+id/graduation_project"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="@string/str_project"
-        android:background="@color/btn_bg_color"
-        android:layout_below="@id/news"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/text_bg_color"/>
+        <!-- XYZ阅读器 -->
+        <Button
+            android:id="@+id/reader"
+            android:layout_below="@id/stock"
+            android:text="@string/str_reader"
+            style="@style/CustomButtonStyle" />
+
+        <!-- 最新闻 -->
+        <Button
+            android:id="@+id/news"
+            android:layout_below="@id/reader"
+            android:text="@string/str_news"
+            style="@style/CustomButtonStyle" />
 
 
+        <!-- 毕业设计 -->
+        <Button
+            android:id="@+id/graduation_project"
+            android:layout_below="@id/news"
+            android:text="@string/str_project"
+            style="@style/CustomButtonStyle" />
 
-</RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
